@@ -1,0 +1,19 @@
+body {
+    background-color: #a4a4a4;
+}
+
+#content {
+    width: 940px;
+    min-height: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+#navigation {
+    margin-top: 60px;
+}
+
+#navigation h2{
+    color: #ff0000;
+}

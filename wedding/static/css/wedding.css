@@ -3,17 +3,22 @@ body {
 }
 
 #content {
-    width: 940px;
     min-height: 600px;
-    margin: 0 auto;
     background-color: #fff;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 #navigation {
     margin-top: 60px;
 }
 
-#navigation h2{
-    color: #ff0000;
+#navigation ul {
+    list-style: none;
 }
+
+#navigation ul li {
+    float: left;
+    display: block;
+    margin-right: 40px;
+}
+

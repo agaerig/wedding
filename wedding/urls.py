@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'drewnora.views.home', name='home'),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
-            {'document_root': 'static'}),
+        {'document_root': 'static'}),
     # url(r'^wedding/', include('wedding.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -7,7 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'drewnora.views.home', name='home'),
-    (r'^static/(?P<path>.*)$', 'django.views.static.serve',
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': 'static'}),
     # url(r'^wedding/', include('wedding.foo.urls')),
 

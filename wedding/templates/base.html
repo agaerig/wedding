@@ -3,6 +3,7 @@
 
 <html lang="en">
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Basic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/wedding.css">
 	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
@@ -15,12 +16,12 @@
 	<div class="row">
 		<div id="navigation" class="span16">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">RSVP</a></li>
-				<li><a href="#">Information</a></li>
-				<li><a href="#">Annora & Drew</a></li>
-				<li><a href="#">Detroit</a></li>
-				<li><a href="#">Registry</a></li>
+				<li><a href="{% url home %}">Home</a></li>
+				<li><a href="{% url rsvp %}">RSVP</a></li>
+				<li><a href="{% url information %}">Information</a></li>
+				<li><a href="{% url couple %}">Annora & Drew</a></li>
+				<li><a href="{% url detroit %}">Detroit</a></li>
+				<li><a href="{% url registry %}">Registry</a></li>
 			</ul>
 		</div>
 	</div>

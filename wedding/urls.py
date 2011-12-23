@@ -7,11 +7,14 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
     url(r'^$', 'drewnora.views.home', name='home'),
+    url(r'^rsvp/$', 'drewnora.views.rsvp', name='rsvp'),
+    url(r'^information/$', 'drewnora.views.information', name='information'),
+    url(r'^annora-and-drew/$', 'drewnora.views.couple', name='couple'),
+    url(r'^detroit/$', 'drewnora.views.detroit', name='detroit'),
+    url(r'^registry/$', 'drewnora.views.registry', name='registry'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT}),
-    # url(r'^wedding/', include('wedding.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

@@ -1,5 +1,14 @@
 body {
     background-color: #a4a4a4;
+    font-family: Arial;
+}
+
+a {
+    color: #000;
+}
+
+.gfont {
+    font-family: 'Basic', Arial;
 }
 
 #content {
@@ -14,6 +23,10 @@ body {
 
 #navigation ul {
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    /*float: left;*/
+    width: 550px;
 }
 
 #navigation ul li {

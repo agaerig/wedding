@@ -1,3 +1,5 @@
+import os
+from django.conf import settings
 from django.conf.urls.defaults import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
@@ -8,7 +10,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'drewnora.views.home', name='home'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
-        {'document_root': '/static'}),
+        {'document_root': settings.STATIC_ROOT}),
     # url(r'^wedding/', include('wedding.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

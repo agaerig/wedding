@@ -3,24 +3,28 @@
 
 <html lang="en">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/wedding.css">
 	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="{{ STATIC_URL }}js/wedding.js"></script>
+    <script type="text/javascript">
+        var myfont_webfont_test = false;
+        // change this to false if you're having trouble with WOFFs
+        var woffEnabled = true;
+        // to place your webfonts in a custom directory, uncomment this and set it to where your webfonts are.
+        var customPath = "http://cdn.drewnora.s3.amazonaws.com/css";
+    </script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/wedding_fonts.js"></script>
 	
 	<title>Annora & Drew</title>
 </head>
 
 <body>
-
-<div id="content" class="container">
-	<div class="row">
-		<div class="span16">
-			<div id="header" class="sofia">Annora & Andrew</div>
-		</div>
-		<div id="navigation" class="span16">
+<div id="page">
+	<div id="header">
+        {% block header %}
+		<div id="title">Annora & Andrew</div>
+		<div id="navigation">
 			<ul>
 				<li><a href="{% url home %}">Home</a></li>
 				<li><a href="{% url rsvp %}">RSVP</a></li>
@@ -30,14 +34,19 @@
 				<li class="last"><a href="{% url registry %}">Registry</a></li>
 			</ul>
 		</div>
+        {% endblock %}
 	</div>
-	<div class="row">
-		<div class="span16">{% block content %}{% endblock %}</div>
-	</div>
+
+	<div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
 	<div id="buildings"></div>
 </div>
 <div id="footer">
+    {% block footer %}
 	<span class='gfont'>A Gaerig-Sheehan joint</span>
+    {% endblock %}
 </div>
 
 </body>

@@ -1,5 +1,3 @@
-# Django settings for wedding project.
-
 import os
 
 PROJECT_ROOT = os.path.dirname(__file__)
@@ -75,16 +73,14 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 WEB_ROOT = os.path.join(PROJECT_ROOT, 'public/')
 
 # Additional locations of static files
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static/'),
-)
+STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'static'),)
 
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -120,8 +116,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'drewnora',
     'gunicorn',
+    'drewnora',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

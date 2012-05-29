@@ -1,7 +1,14 @@
-$(document).ready(function() {    
+$(function() {    
     if($('#countdown').length > 0)  {
         calculate_time();
     }
+
+    $('#registry ul li').mouseover(function() {
+        $(this).find('ul').show();
+    });
+    $('#registry ul li').mouseout(function() {
+        $(this).find('ul').hide();
+    });
 });
 
 function calculate_time() {

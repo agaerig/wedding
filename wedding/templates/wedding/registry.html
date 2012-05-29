@@ -1,7 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<h1>registry</h1>
-
+<div id="registry">
+    <ul>
+        <li>
+            <a class="store" href="#">
+                <!-- <p>Crate &amp; Barrel</p> -->
+                <img src="{{ STATIC_URL }}img/registry/crate_200x200.png" />
+                <ul>
+                    <li>dinnerware</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a class="store" href="#">
+                <!-- <p>Macy's</p> -->
+                <img src="{{ STATIC_URL }}img/registry/macys_200x200.png" />
+                <ul>
+                    <li>flatware</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a class="store" href"#">
+                <!-- <p>Target</p> -->
+                <img src="{{ STATIC_URL }}img/registry/target_200x200.png" />
+                <ul>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </a>
+        </li>
+        <li>
+            <a class="store" href="#">
+                <!-- <p>Amazon</p> -->
+                <img src="{{ STATIC_URL }}img/registry/amazon_200x200.png" />
+                <ul>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                    <li>stuff</li>
+                </ul>
+            </a>
+        </li>
+    </ul>
+</div>
 {% endblock %}

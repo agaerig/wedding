@@ -4,3 +4,4 @@ fabric==1.1.1
 psycopg2
 gunicorn==0.12.2
 boto==2.0
+-e git+https://github.com/simplegeo/django-storages.git#egg=django-storages

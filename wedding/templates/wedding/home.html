@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="info-box" class="sofia">
+<div id="homepage">
+	<a class="homepage-item" id="about-us" href="{% url about-us %}" title="About Us"></a>
+	<a class="homepage-item" id="information" href="{% url information %}" title="General Information"></a>
+	<a class="homepage-item" id="detroit" href="{% url detroit %}" title="About Detroit"></a>
+	<a class="homepage-item" id="accommodations" href="{% url accommodations %}" title="Accommodations"></a>
+	<a class="homepage-item" id="registry" class="last" href="{% url registry %}" title="Registry"></a>
+</div>
+{% endblock %}
+
+
+<!-- DEPRECATED -->
+<div id="info-box">
 	<p id="date">September 14, 2012</p>
 	<p id="location">Detroit, Michigan</p>
 	<p id="countdown" class="armata">A bunch of days</p>
 </div>
-{% endblock %}

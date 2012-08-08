@@ -1,0 +1,4 @@
+#!/bin/bash
+
+DIR="`dirname $0`/../wedding/static"
+sass --scss --style expanded --watch $DIR/scss:$DIR/css

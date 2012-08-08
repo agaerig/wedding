@@ -1,0 +1,238 @@
+body {
+  background: #fbfbf9;
+  color: #86868a;
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 1200px;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+body h1, body h2, body h3, body h4 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+body h1 span, body h2 span, body h3 span, body h4 span {
+  font-weight: 300;
+  font-style: italic;
+}
+body h1 {
+  font-weight: 700;
+}
+body h2 {
+  font-weight: 400;
+}
+body h3 {
+  font-weight: 300;
+}
+body h4 {
+  font-weight: 300;
+  clear: both;
+}
+body .light {
+  color: #99999e;
+}
+body .short-info {
+  font-size: 22px;
+}
+body .divider {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #d99f27;
+}
+body .section {
+  margin: 18px 0;
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+body .section.hotel {
+  margin: 36px 0;
+}
+body .section .half-section {
+  width: 50%;
+  float: left;
+}
+body .section .half-section li.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #d99f27;
+}
+body .section .half-section.second-row {
+  margin-top: 18px;
+}
+body .section .third-section {
+  width: 33%;
+  float: left;
+}
+body .section .third-section li {
+  text-align: center;
+}
+body .section .third-section li.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+body .section .quarter-section {
+  width: 25%;
+  float: left;
+}
+body .section .quarter-section li {
+  text-align: center;
+  font-size: 16px;
+}
+body .section .quarter-section li.registry-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+body .section p {
+  clear: both;
+  font-size: 16px;
+  margin: 8px 0;
+  float: left;
+}
+body .section p.first {
+  margin-top: 16px;
+}
+body a, body a:visited {
+  color: #d99f27;
+  text-decoration: none;
+}
+body a:hover, body a:visited:hover {
+  text-decoration: underline;
+}
+body #page {
+  width: 800px;
+  height: auto;
+  padding: 40px;
+  margin: 0 auto;
+}
+body #page #buildings {
+  display: block;
+  width: 100%;
+  height: 340px;
+  background: url("../img/buildings.png") no-repeat 0 0;
+}
+body #page #header {
+  width: 100%;
+  height: 50px;
+  margin: 12px 0 24px 0;
+}
+body #page #header #navigation {
+  width: 100%;
+  height: 50px;
+}
+body #page #header #navigation li.header-item {
+  height: 100%;
+  background: url("../img/header.png") no-repeat 0 0;
+  /*                    display: block;*/
+  float: left;
+  margin-right: 12px;
+  cursor: pointer;
+}
+body #page #header #navigation li.header-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #page #header #navigation li.header-item#about-us {
+  width: 132px;
+}
+body #page #header #navigation li.header-item#about-us:hover {
+  background-position: 0 -50px;
+}
+body #page #header #navigation li.header-item#information {
+  width: 117px;
+  background-position: -145px 0;
+}
+body #page #header #navigation li.header-item#information:hover {
+  background-position: -145px -50px;
+}
+body #page #header #navigation li.header-item#accommodations {
+  width: 125px;
+  background-position: -275px 0;
+}
+body #page #header #navigation li.header-item#accommodations:hover {
+  background-position: -275px -50px;
+}
+body #page #header #navigation li.header-item#detroit {
+  width: 89px;
+  background-position: -410px 0;
+}
+body #page #header #navigation li.header-item#detroit:hover {
+  background-position: -410px -50px;
+}
+body #page #header #navigation li.header-item#registry {
+  width: 288px;
+  background-position: -510px 0;
+  margin-right: 0;
+}
+body #page #header #navigation li.header-item#registry:hover {
+  background-position: -510px -50px;
+}
+body #page #homepage {
+  height: auto;
+}
+body #page #homepage .homepage-item {
+  display: block;
+  float: left;
+  cursor: pointer;
+  background: url("../img/homepage.png") no-repeat 0 0;
+  margin-top: 18px;
+}
+body #page #homepage .homepage-item#about-us {
+  width: 100%;
+  height: 100px;
+}
+body #page #homepage .homepage-item#about-us:hover {
+  background-position: 0 -544px;
+}
+body #page #homepage .homepage-item#information {
+  width: 100%;
+  height: 100px;
+  background-position: 0 -110px;
+}
+body #page #homepage .homepage-item#information:hover {
+  background-position: 0 -654px;
+}
+body #page #homepage .homepage-item#detroit {
+  width: 340px;
+  height: 194px;
+  background-position: 0 -240px;
+}
+body #page #homepage .homepage-item#detroit:hover {
+  background-position: 0 -784px;
+}
+body #page #homepage .homepage-item#accommodations {
+  width: 432px;
+  height: 194px;
+  background-position: -367px -240px;
+  float: right;
+}
+body #page #homepage .homepage-item#accommodations:hover {
+  background-position: -367px -784px;
+}
+body #page #homepage .homepage-item#registry {
+  clear: both;
+  width: 100%;
+  height: 82px;
+  background-position: 0 -456px;
+}
+body #page #homepage .homepage-item#registry:hover {
+  background-position: 0 -1000px;
+}

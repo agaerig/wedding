@@ -31,12 +31,21 @@ body h1 {
 body h2 {
   font-weight: 400;
 }
+body h2.afterparty {
+  text-align: center;
+  font-size: 31px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
 body h3 {
   font-weight: 300;
 }
 body h4 {
   font-weight: 300;
   clear: both;
+}
+body .yellow {
+  color: #d99f27;
 }
 body .light {
   color: #99999e;

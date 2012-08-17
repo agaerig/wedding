@@ -36,6 +36,13 @@ body {
 
     h2 {
         font-weight: 400;
+        
+        &.afterparty {
+            text-align: center;
+            font-size: 31px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
     }
 
     h3 {
@@ -45,6 +52,10 @@ body {
     h4 {
         font-weight: 300;
         clear: both;
+    }
+    
+    .yellow {
+        color: $yellow;
     }
 
     .light {

@@ -14,6 +14,7 @@ urlpatterns = patterns('',
     url(r'^accommodations/$', direct_to_template, {'template': 'wedding/interior/accommodations.html'}, name='accommodations'),
     url(r'^detroit/$', direct_to_template, {'template': 'wedding/interior/detroit.html'}, name='detroit'),
     url(r'^registry/$', direct_to_template, {'template': 'wedding/interior/registry.html'}, name='registry'),
+    url(r'^saturday/$', direct_to_template, {'template': 'wedding/interior/saturday.html'}, name='saturday'),
     # url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
     #     {'document_root': settings.MEDIA_ROOT}),
 

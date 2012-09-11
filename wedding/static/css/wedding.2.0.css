@@ -40,6 +40,10 @@ body h2.afterparty {
 body h3 {
   font-weight: 300;
 }
+body h3.detroit-info {
+  margin-bottom: 12px;
+  float: left;
+}
 body h4 {
   font-weight: 300;
   clear: both;
@@ -58,8 +62,35 @@ body .divider {
   height: 1px;
   border-bottom: 1px solid #d99f27;
 }
+body #scrolltop {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 60px;
+  background: url("../img/detroit/arrowup.png") no-repeat 0 0;
+  width: 29px;
+  height: 47px;
+  text-indent: -9999px;
+  display: none;
+}
+body #detroit-nav {
+  width: 100%;
+  float: left;
+  margin: 24px 0;
+}
+body #detroit-nav li {
+  display: block;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  color: #d99f27;
+  cursor: pointer;
+  margin-right: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 body .section {
-  margin: 18px 0;
+  margin: 18px info0;
   width: 100%;
   height: auto;
   clear: both;
@@ -67,6 +98,43 @@ body .section {
 }
 body .section.hotel {
   margin: 36px 0;
+}
+body .section .detroit-info {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+body .section .detroit-info li {
+  padding-bottom: 24px;
+  float: left;
+}
+body .section .detroit-info li img.detroit-img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-right: 16px;
+  box-shadow: 4px 2px 14px #86868a;
+  -moz-box-shadow: 4px 2px 14px #86868a;
+  -webkit-box-shadow: 4px 2px 14px #86868a;
+}
+body .section .detroit-info li ul {
+  float: left;
+  width: 70%;
+}
+body .section .detroit-info li ul li {
+  padding: 0;
+}
+body .section .detroit-info li ul li.title {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #d99f27;
+}
+body .section .detroit-info li ul li span {
+  display: inline-block;
+  padding-right: 6px;
+  font-weight: 600;
 }
 body .section .half-section {
   width: 50%;
@@ -78,6 +146,11 @@ body .section .half-section li.title {
   text-transform: uppercase;
   font-weight: 300;
   color: #d99f27;
+}
+body .section .half-section li span {
+  display: inline-block;
+  padding-right: 6px;
+  font-weight: 600;
 }
 body .section .half-section.second-row {
   margin-top: 18px;
@@ -149,7 +222,6 @@ body #page #header #navigation {
 body #page #header #navigation li.header-item {
   height: 100%;
   background: url("../img/header.png") no-repeat 0 0;
-  /*                    display: block;*/
   float: left;
   margin-right: 12px;
   cursor: pointer;
@@ -244,4 +316,8 @@ body #page #homepage .homepage-item#registry {
 }
 body #page #homepage .homepage-item#registry:hover {
   background-position: 0 -1000px;
+}
+
+#detroit-guides {
+  margin-bottom: 14px;
 }

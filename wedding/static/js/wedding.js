@@ -3,12 +3,32 @@ $(function() {
         calculate_time();
     }
 
-    $('#registry ul li').mouseover(function() {
-        $(this).find('ul').show();
+    $('.detroit-nav').click(function() {
+        var go = $(this).data('nav');
+        console.log($('#'+go).offset().top);
+        $('html, body').animate({
+            scrollTop: $('#'+go).offset().top
+        }, 500);
     });
-    $('#registry ul li').mouseout(function() {
-        $(this).find('ul').hide();
+
+    $('#scrolltop').click(function() {
+        $('html, body').animate({
+            scrollTop: $('#detroit-top').offset().top
+        }, 300);
     });
+
+    $(window).scroll(function() {
+        var top = $('#detroit-top').offset().top;
+        if(top < $(this).scrollTop()) {
+            $('#scrolltop').show();
+        } else {
+            $('#scrolltop').hide();
+        }
+    });
+
+    $('html, body').animate({
+        scrollTop: $('.top-element').offset().top
+    }, 800);
 });
 
 function calculate_time() {

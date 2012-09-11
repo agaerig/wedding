@@ -1,8 +1,277 @@
 {% extends "wedding/interior.html" %}
 
 {% block content %}
-<h2>Detroit <span>Coming Soon</span></h2>
+<a id="scrolltop">up</a>
+<h2 id="detroit-top" class="top-element">Detroit</h2>
+<div class="divider"></div>
 <div class="section">
-	<p>Detroit is a city we love, and we're happy to share it with you on this occasion. Many of you are from the Detroit area, but some of you are not. Check back in the coming weeks for some of our favorite restaurants, bars, and attractions. We hope the timing of your visit allows for exploration.</p>
+	<p>Detroit is a city we love, and we're happy to share it with you on this occasion. Many of you are from the Detroit area, but some of you are not. Below please find a guide to some of our favorite restaurants, bars, shops, and attractions. We hope the timing of your visit allows for exploration.</p>
+</div>
+
+<ul id="detroit-nav">
+    <li><a class="detroit-nav" data-nav="detroit-food">Food</a></li>
+    <li>|</li>
+    <li><a class="detroit-nav" data-nav="detroit-bars">Bars</a></li>
+    <li>|</li>
+    <li><a class="detroit-nav" data-nav="detroit-attractions">Attractions</a></li>
+    <li>|</li>
+    <li><a class="detroit-nav" data-nav="detroit-annarbor">Ann Arbor</a></li>
+</ul>
+
+<ul id="detroit-guides">
+    <li class="guides-title">Some various guides to Detroit:</li>
+    <li><a target="_blank" href="http://www.nytimes.com/2002/04/19/travel/journeys-36-hours-detroit.html?pagewanted=all&src=pm">East Coast Liberal Media</a></li>
+    <li><a target="_blank" href="http://opinionator.blogs.nytimes.com/2011/05/17/imagining-detroit/">Food-talkin'</a></li>
+    <li><a target="_blank" href="http://www.time.com/time/travel/cityguide/printout/0,31522,1994456_1994357_1994238-full,00.html">Time Magazine</a></li>
+    <li><a target="_blank" href="http://www.gq.com/food-travel/restaurants-and-bars/201206/chef-dave-mancini-detroit-guide-short-order">A local weighs in.</a></li>
+    <li><a target="_blank" href=""></a></li>
+
+</ul>
+
+<div class="section">
+    <h3 class="detroit-info" id="detroit-food">Food</h3>
+    <ul class="detroit-info">
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/slows.png" />
+	        <ul>
+                <li class="title"><a target="_blank" href="http://slowsbarbq.com/">Slow's Barbeque</a></li>
+                <li><span>What:</span>Detroit's most popular comfort-food has helped revitalize the Corktown neighborhood.</li>
+                <li><span>Why:</span>Delicious eats and a worthwhile beer menu.</li>
+                <li><span>What else:</span>Plan on a wait, especially on the weekends.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/6nvxE">2138 Michigan Avenue, Detroit, MI 48216</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/roast.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.roastdetroit.com/">Roast</a></li>
+                <li><span>What:</span>Iron Chef competitor Michael Symon's meat-focused American bistro</li>
+                <li><span>Why:</span>It's one of Detroit's newest and most respected fine-dining experiences.</li>
+                <li><span>What else:</span>Located in the same building as the Westin Book Cadillac hotel &mdash; the hotel in which Lou Gehrig told his manager to take him out of the starting lineup, ending his consecutive games played streak  &mdash; Roast also offers a stylish late-night cocktail bar.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/DAKO6">1128 Washington Boulevard, Detroit, MI 48226</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/coney.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.americanconeyisland.com/home.htm">American Coney Island</a> / Lafayette Coney Island</li>
+                <li><span>What:</span>A regional favorite.</li>
+                <li><span>Why:</span>Because these places &mdash; neighbors and competitors for decades &mdash; are old, fun, and delicious, especially late at night.</li>
+                <li><span>What else:</span>When not busy, Lafayette cooks and servers will stand outside and chide customers walking into American.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/VrTz8">114 W. Lafayette, Detroit, MI 48226</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/mercury.png" />
+            <ul class="half-section">
+                <li class="title"><a href="http://mercuryburgerbar.com/" target="_blank">Mercury Burger Bar</a></li>
+                <li><span>What:</span>A diner-style burger joint whose old-timey kitsch doesn't jive with its slyly stylish and progressive menu.</li>
+                <li><span>Why:</span>Owned by the same folks who own Slow's, Mercury Burger Bar is less unique, perhaps, but easier to get a table at and still cool as hell. Good beer.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/81bGq">2163 Michigan Avenue, Detroit, MI 48216</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/astro.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.astrodetroit.com/">Astro Cafe</a></li>
+                <li><span>What:</span>Detroit's bourgeiest cafe specializes in drip coffees and locally sourced snackthings.</li>
+                <li><span>Why:</span>Because it's a really pleasant place to spend a morning, and the coffee is good.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/855yI">2124 Michigan Avenue, Detroit, MI 48216</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/papalis.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.pizzapapalis.com/">Pizza Papalis</a></li>
+                <li><span>What:</span>"Chicago"-style pizza in Detroit.</li>
+                <li><span>Why:</span>In Detrtoi's historic Greektown, it's a solid, low-key option.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/wy6GY">553 Monroe Street, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <!-- <li> -->
+        <!--     <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/fishbone.png" /> -->
+        <!--     <ul class="half-section"> -->
+        <!--         <li class="title"><a target="_blank" href="http://www.fishbonesusa.com/">Fishbone's</a></li> -->
+        <!--         <li><span>What:</span></li> -->
+        <!--         <li><span>Why:</span></li> -->
+        <!--         <li><span>What else:</span></li> -->
+        <!--         <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/aY2cA">400 Monroe Street, Detroit, MI</a></li> -->
+        <!--     </ul> -->
+        <!-- </li> -->
+    </ul>
+</div>
+<div class="section">
+    <h3 class="detroit-info" id="detroit-bars">Breweries &amp; Bars</h3>
+    <ul class="detroit-info">
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/bronx.png" />
+            <ul class="half-section">
+                <li class="title">The Bronx Bar</li>
+                <li><span>What:</span>Detroit's best hipster bar, named after New York's fourth-best borough.</li>
+                <li><span>Why:</span>Because if you are attending this wedding, you might be a hipster.</li>
+                <li><span>What else:</span>They do some brunch-y stuff on Sundays.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/DvEdF">4476 2nd Avenue, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/detroitbeerco.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://detroitbeerco.com/">The Detroit Beer Company</a></li>
+                <li><span>What:</span>Detroit does beer. <a target="_blank" href="http://www.youtube.com/watch?v=EP--Oy81Y7o">Beer.</a></li>
+                <li><span>Why:</span>Because if you're attending this wedding you probably like beer, but might not want to admit to yourself that you're a hipster.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/Nu7TP">1529 Broadway St., Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/motorcity.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.motorcitybeer.com/">Motor City Brewing Works</a></li>
+                <li><span>What:</span>Detroit does more beer. And a little food.</li>
+                <li><span>What else:</span>Charming little rooftop deck. It fills up, though.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/CSrIj">470 West Canfield Street, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/lagerhouse.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://pjslagerhouse.com/">PJ's Lager House</a></li>
+                <li><span>What:</span>Rock music shack cum dive bar on Michigan Avenue, in the Corktown area.</li>
+                <li><span>Why:</span>If you're looking to kill some time before the reception, or you're curious about Corktown.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/5paZP">1254 Michigan Avenue, Detroit, MI</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="section">
+    <h3 class="detroit-info" id="detroit-attractions">Attractions</h3>
+    <ul class="detroit-info">
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/easternmarket.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.detroiteasternmarket.com/">Eastern Market</a></li>
+                <li><span>What:</span>A farmer's market on (natural, pesticide-free) steroids, has been a focal point of Detroit Saturday mornings for decades.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/9igwq">2934 Russell Street, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/dia.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.dia.org/">Detroit Institute of Arts</a></li>
+                <li><span>What:</span>World-class art museum has been recently updated.</li>
+                <li><span>Why:</span>Solid modernism, post-modern collections especially.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/FBWIb">5200 Woodward, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/pewabic.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.pewabic.org/">Pewabic Pottery</a></li>
+                <li><span>What:</span>A pottery artists' haven near Indian Village, pewabic offers world-class craftsmanship.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/KZkYq">10125 East Jefferson Avenue, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/tigerstadium.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://en.wikipedia.org/wiki/Tiger_Stadium_(Detroit)">Tiger Stadium</a></li>
+                <li><span>What:</span>The site of old Tiger Stadium, where a ragtag, amateur groundscrew has insisted on keeping the field in playing condition.</li>
+                <li><span>Why:</span>Minutes from where Annora grew up, it holds plenty of fond memories.</li>
+                <li><span>What else:</span>Because you can actually walk out onto the field. Ignore the fences.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/3ZDkJ">2121 Trumbull Street, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/motown.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://motownmuseum.com/">Motown Museum</a></li>
+                <li><span>What:</span>A museum for all things relating to Detroit's most enduring musical legacy.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/Kdquw">2648 West Grand Boulevard, Detroit, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/detroitthreads.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://detroitthreadsstore.com/">Detroit Threads</a></li>
+                <li><span>What:</span>The best play to buy techno in the city it grew up in.</li>
+                <li><span>Why:</span>It's also a thrift shop! Actually, nevermind that part.</li>
+                <li><span>What else:</span>Mostly for used stuff and vinyl freaks. Can't-miss if you're a fan of electronic music.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/lVGV6">10238 Joseph Campau Street, Hamtramck, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/stormy.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.stormyrecords.com/">Stormy Records</a></li>
+                <li><span>What:</span>Detroit's best store for independent and experimental music.</li>
+                <li><span>What else:</span>Owned by ambient music duo Windy &amp; Carl, the store focuses on the more abstract ends of indie rock.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/BMMbv">13210 Michigan Avenue, Dearborn, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/johnking.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.rarebooklink.com/cgi-bin/kingbooks/index.html">John King Books</a></li>
+                <li><span>What:</span>An intimidatingly large used bookstore, with a helpful staff. Plan on spending some time here.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/zLgMg">901 West Lafayette Boulevard, Detroit, MI</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="section">
+    <h3 class="detroit-info" id="detroit-annarbor">Ann Arbor</h3>
+    <ul class="detroit-info">
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/michigan.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.mgoblue.com/">Michigan Stadium</a></li>
+                <li><span>What:</span>You shouldn't have to ask. Let's not get off on the wrong foot here.</li>
+                <li><span>Why:</span>See above.</li>
+                <li><span>What else:</span><a target="_blank" href="http://www.youtube.com/watch?v=75XVemd8jF4">Not at all gratuitous hype video.</a></li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/gE3Tv">1201 South Main Street, Ann Arbor, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/encore.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.encorerecordsa2.com/">Encore Records</a></li>
+                <li><span>What:</span>Library-like used record store stuffed to the gills. Better for vinyl.</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/B7LXL">417 E Liberty St, Ann Arbor, MI</a></li>
+            </ul>
+        </li>
+        <li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/ashleys.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="http://www.ashleys.com/">Ashley's</a></li>
+                <li><span>What:</span>Perhaps you are in Ann Arbor? And perhaps you'd like a drink?</li>
+                <li><span>What else:</span>And perhaps you'd like to have like 300 on-tap choices of just exactly what drink?</li>
+                <li><span>Where:</span><a target="_blank" href="http://goo.gl/maps/NF3O7">338 South State Street, Ann Arbor, MI</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
 {% endblock %}
+
+
+
+
+<li>
+    <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/slows.png" />
+    <ul class="half-section">
+        <li class="title"><a target="_blank" href=""></a></li>
+        <li><span>What:</span></li>
+        <li><span>Why:</span></li>
+        <li><span>What else:</span></li>
+        <li><span>Where:</span><a target="_blank" href=""></a></li>
+    </ul>
+</li>
+<li>
+            <img class="detroit-img" src="{{ STATIC_URL }}img/detroit/slows.png" />
+            <ul class="half-section">
+                <li class="title"><a target="_blank" href="">Frita Baditos</a></li>
+                <li><span>What:</span></li>
+                <li><span>Why:</span></li>
+                <li><span>What else:</span></li>
+                <li><span>Where:</span><a target="_blank" href=""></a></li>
+            </ul>
+        </li>

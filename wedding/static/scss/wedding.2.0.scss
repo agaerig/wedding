@@ -1,8 +1,9 @@
 $yellow: #d99f27;
+$gray: #86868a;
 
 body {
     background: #fbfbf9;
-    color: #86868a;
+    color: $gray;
     font-family: 'PT Serif', serif;
     font-size: 16px;
     margin: 0;
@@ -47,6 +48,11 @@ body {
 
     h3 {
         font-weight: 300;
+
+        &.detroit-info {
+            margin-bottom: 12px;
+            float: left;
+        }
     }
 
     h4 {
@@ -71,9 +77,39 @@ body {
         height: 1px;
         border-bottom: 1px solid $yellow;
     }
+
+    #scrolltop {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 60px;
+        background: url("../img/detroit/arrowup.png") no-repeat 0 0;
+        width: 29px;
+        height: 47px;
+        text-indent: -9999px;
+        display: none;
+    }
+
+    #detroit-nav {
+        width: 100%;
+        float: left;
+        margin: 24px 0;
+
+        li { 
+            display: block;
+            float: left;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            color: $yellow;
+            cursor: pointer;
+            margin-right: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
     
     .section {
-        margin: 18px 0;
+        margin: 18px info0;
         width: 100%;
         height: auto;
         clear: both;
@@ -81,6 +117,49 @@ body {
         
         &.hotel {
             margin: 36px 0;
+        }
+
+        .detroit-info {
+            width: 100%;
+            float: left;
+            clear: both;
+
+            li {
+                padding-bottom: 24px;
+                float: left;
+                img.detroit-img {
+                    float: left;
+                    width: 150px;
+                    height: 150px;
+                    margin-right: 16px;
+                    box-shadow: 4px 2px 14px $gray;
+                    -moz-box-shadow: 4px 2px 14px $gray;
+                    -webkit-box-shadow: 4px 2px 14px $gray;
+
+                }
+
+                ul {
+                    float: left;
+                    width: 70%;
+                    li {
+                        padding: 0;
+                        &.title {
+                            font-family: 'Lato', sans-serif;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                            color: $yellow;
+                        }
+
+                        span {
+                            display: inline-block;
+                            padding-right: 6px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+            }
         }
 
         .half-section {
@@ -93,6 +172,12 @@ body {
                     text-transform: uppercase;
                     font-weight: 300;
                     color: $yellow;
+                }
+
+                span {
+                    display: inline-block;
+                    padding-right: 6px;
+                    font-weight: 600;
                 }
             }
             &.second-row {
@@ -177,7 +262,6 @@ body {
                 li.header-item {
                     height: 100%;
                     background: url("../img/header.png") no-repeat 0 0;
-/*                    display: block;*/
                     float: left;
                     margin-right: 12px;
                     cursor: pointer;
@@ -280,4 +364,8 @@ body {
             }
         }
     }
+}
+
+#detroit-guides {
+    margin-bottom: 14px;
 }
